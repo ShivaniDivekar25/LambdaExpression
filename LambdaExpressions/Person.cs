@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace LambdaExpressions
 {
+    //Created class 
     public class Person
     {
         public int SSN { get; set; }
@@ -14,7 +15,7 @@ namespace LambdaExpressions
         public int Age { get; set; }
         public override string ToString()
         {
-            return $"SSN: {SSN} name: {Name} address: {Address} age:{Age}";
+            return $"SSN: {SSN} Name: {Name} Address: {Address} Age:{Age}";
         }
     }
 }
