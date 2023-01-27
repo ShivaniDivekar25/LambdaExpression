@@ -16,6 +16,7 @@ namespace LambdaExpression
             PersonDataManagement.FindAverageAge(listOfPerson);
             PersonDataManagement.FindSpecificPerson(listOfPerson,"Shivani");
             PersonDataManagement.SkipedAgeLessThan60Records(listOfPerson);
+            PersonDataManagement.RemovePerson(listOfPerson,"Shivani");
         }
         //Created method to add person details into list
         public static void AddingPersonDetailsIntoList(List<Person> list)

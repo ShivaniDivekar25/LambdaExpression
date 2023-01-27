@@ -53,5 +53,12 @@ namespace LambdaExpressions
             var result = list.OrderBy(p => p.Age).SkipWhile(p => p.Age < 60);
             Program.DisplayPersonDetails(result);
         }
+        //Created method for remove person 
+        public static void RemovePerson(List<Person> list, string input)
+        {
+            Console.WriteLine("\nRemove person");
+            var result = list.RemoveAll(p => p.Name == input);
+            Program.DisplayPersonDetails(list);
+        }
     }
 }
