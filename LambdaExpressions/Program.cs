@@ -15,7 +15,9 @@ namespace LambdaExpression
             PersonDataManagement.FindTenageRecords(listOfPerson);
             PersonDataManagement.FindAverageAge(listOfPerson);
             PersonDataManagement.FindSpecificPerson(listOfPerson,"Shivani");
+            PersonDataManagement.SkipedAgeLessThan60Records(listOfPerson);
         }
+        //Created method to add person details into list
         public static void AddingPersonDetailsIntoList(List<Person> list)
         {
             list.Add(new Person() { SSN = 1, Name = "Shivani", Address = "Maharashtra", Age = 12 });
@@ -27,6 +29,7 @@ namespace LambdaExpression
             list.Add(new Person() { SSN = 1, Name = "Kalpna", Address = "Maharashtra", Age = 14 });
             DisplayPersonDetails(list);
         }
+        //Created method to display person details 
         public static void DisplayPersonDetails(IEnumerable<Person> list)
         {
             foreach (Person person in list)

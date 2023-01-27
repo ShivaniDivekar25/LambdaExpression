@@ -45,5 +45,13 @@ namespace LambdaExpressions
                 Console.WriteLine("Given person is not present");
             }
         }
+        //Created method for skiped age less than 60yrs
+        public static void SkipedAgeLessThan60Records(List<Person> list)
+        {
+            Console.WriteLine("\nSkiped Age Less Than 60 Records");
+            //var result = list.Where(p => p.Age > 60);
+            var result = list.OrderBy(p => p.Age).SkipWhile(p => p.Age < 60);
+            Program.DisplayPersonDetails(result);
+        }
     }
 }
