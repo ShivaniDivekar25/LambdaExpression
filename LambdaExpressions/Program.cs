@@ -14,6 +14,7 @@ namespace LambdaExpression
             PersonDataManagement.RetreiveTop2Records(listOfPerson);
             PersonDataManagement.FindTenageRecords(listOfPerson);
             PersonDataManagement.FindAverageAge(listOfPerson);
+            PersonDataManagement.FindSpecificPerson(listOfPerson,"Shivani");
         }
         public static void AddingPersonDetailsIntoList(List<Person> list)
         {

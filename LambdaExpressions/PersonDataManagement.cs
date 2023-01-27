@@ -31,5 +31,19 @@ namespace LambdaExpressions
             double result = list.Average(p => p.Age);
             Console.WriteLine(Math.Round(result, 2));
         }
+        //Created method for finding specific person
+        public static void FindSpecificPerson(List<Person> list, string input)
+        {
+            Console.WriteLine("\nFind person");
+            var result = list.Where(p => p.Name == input).ToList();
+            if (result.Count > 0)
+            {
+                Program.DisplayPersonDetails(result);
+            }
+            else
+            {
+                Console.WriteLine("Given person is not present");
+            }
+        }
     }
 }
