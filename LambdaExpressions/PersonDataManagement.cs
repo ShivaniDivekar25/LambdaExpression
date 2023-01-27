@@ -17,5 +17,11 @@ namespace LambdaExpressions
             var Top2 = list.Where(p => p.Age < 60).OrderBy(p => p.Age).Take(2);
             Program.DisplayPersonDetails(Top2);
         }
+        public static void FindTenageRecords(List<Person> list)
+        {
+            Console.WriteLine("\nFind Tenage Records Age Between 13 to 18");
+            var result = list.Where(p => p.Age > 13 && p.Age < 18);
+            Program.DisplayPersonDetails(result);
+        }
     }
 }

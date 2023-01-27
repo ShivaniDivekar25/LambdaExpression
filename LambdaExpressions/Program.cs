@@ -12,6 +12,7 @@ namespace LambdaExpression
             Console.WriteLine("For adding person details into list");
             AddingPersonDetailsIntoList(listOfPerson);
             PersonDataManagement.RetreiveTop2Records(listOfPerson);
+            PersonDataManagement.FindTenageRecords(listOfPerson);
         }
         public static void AddingPersonDetailsIntoList(List<Person> list)
         {
