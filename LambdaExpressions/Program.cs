@@ -13,6 +13,7 @@ namespace LambdaExpression
             AddingPersonDetailsIntoList(listOfPerson);
             PersonDataManagement.RetreiveTop2Records(listOfPerson);
             PersonDataManagement.FindTenageRecords(listOfPerson);
+            PersonDataManagement.FindAverageAge(listOfPerson);
         }
         public static void AddingPersonDetailsIntoList(List<Person> list)
         {
